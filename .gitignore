@@ -3,3 +3,5 @@ kubeconfig
 sealing-master.yaml
 secrets.conf
 sealing-master.yaml
+mycreds.txt
+
