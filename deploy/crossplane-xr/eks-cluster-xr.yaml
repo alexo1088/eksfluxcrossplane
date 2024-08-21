@@ -7,6 +7,8 @@ metadata:
     argocd.argoproj.io/sync-wave: "200"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  resourceConfig:
+    providerConfigName: aws-provider-config
   parameters:
     region: us-east-1
     vpc-name: "crossplane-vpc-only"
