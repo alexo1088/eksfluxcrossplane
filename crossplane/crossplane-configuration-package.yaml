@@ -4,8 +4,6 @@ metadata:
   name: crossplane-configuration-package
   namespace: flux-system
 spec:
-  dependsOn:
-  - name: crossplane-provider-package
   interval: 30s
   path: ./deploy/crossplane-composition
   prune: true
