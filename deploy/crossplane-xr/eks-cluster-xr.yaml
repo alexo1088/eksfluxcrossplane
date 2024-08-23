@@ -30,7 +30,7 @@ spec:
     subnet2-private-cidrBlock: "10.20.12.0/28"
     subnet2-private-availabilityZone: "us-east-1b"
 
-    cluster-role: arn:aws:iam::016194978976:role/logicworks/lw-okta/lw-okta-admin
+    cluster-role: arn:aws:iam::016194978976:role/AmazonEKSClusterRole-KevinOTesting
     workernode-role: arn:aws:iam::016194978976:role/AmazonEKSNodeRole-KevinOTesting
 
     k8s-version: "1.29"
