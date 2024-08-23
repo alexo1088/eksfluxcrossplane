@@ -35,7 +35,7 @@ spec:
 
     k8s-version: "1.29"
     workload-type: "non-gpu"
-    workers-size: 1
+    workers-size: 3
 
   compositionRef:
     name: amazon-eks-cluster
