@@ -31,7 +31,7 @@ spec:
     subnet2-private-availabilityZone: "us-east-1b"
 
     cluster-role: arn:aws:iam::016194978976:role/logicworks/lw-okta/lw-okta-admin
-    workernode-role: arn:aws:iam::016194978976:role/EKS-WorkerNode-Role
+    workernode-role: arn:aws:iam::016194978976:role/AmazonEKSNodeRole-KevinOTesting
 
     k8s-version: "1.29"
     workload-type: "non-gpu"
