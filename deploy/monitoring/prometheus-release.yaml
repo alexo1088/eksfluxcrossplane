@@ -10,8 +10,8 @@ metadata:
   name: prometheus-helmrelease
   namespace: flux-system
 spec:
- install:
-   createNamespace: true
+# install:
+#   createNamespace: true
   targetNamespace: monitoring
   releaseName: prometheus-for-amp
   interval: 5m
