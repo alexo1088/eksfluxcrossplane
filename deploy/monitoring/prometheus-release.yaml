@@ -14,7 +14,8 @@ spec:
 #   createNamespace: true
   targetNamespace: monitoring
   releaseName: prometheus-for-amp
-  interval: 10m
+  interval: 5m
+  timeout: 10m
   kubeConfig:
     secretRef:
       name: crossplane-flux-cluster-connection    
