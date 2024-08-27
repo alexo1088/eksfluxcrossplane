@@ -5,9 +5,9 @@
 # Create a HelmRelease definition that references a ConfigMap
 # Create a 'kustomization.yaml' that generates the ConfigMap using the configurations from 'kustomizeconfig.yaml'
 #
-#nameReference:
-#- kind: ConfigMap
-#  version: v1
-#  fieldSpecs:
-#  - path: spec/valuesFrom/name
-#    kind: HelmRelease
+nameReference:
+- kind: ConfigMap
+  version: v1
+  fieldSpecs:
+  - path: spec/valuesFrom/name
+    kind: HelmRelease

@@ -1,36 +1,36 @@
-#serviceAccounts:
-#  server:
-#    name: prometheus-service-account
-#    annotations: 
-#      #
-#      # Set this to the ARN of an IAM role for the service account.
-#      # For details, refer to the documentation here: https://docs.aws.amazon.com/prometheus/latest/userguide/set-up-irsa.html
-#      #
-#      eks.amazonaws.com/role-arn: arn:aws:iam::016194978976:role/amp-iamproxy-ingest-role
-#
-#nodeExporter:
-#    enabled: false
-#alertmanager:   
-#    enabled: false
-#pushgateway:
-#    enabled: false
-#kubeStateMetrics:
-#    enabled: false    
-#
-#server:
-#    statefulSet:
-#        enabled: false
-#    persistentVolume:   
-#        enabled: false
-#        
-#    remoteWrite:
-#          #
-#          # Set the ID of an AMP workspace 
-#          #
-#        - url: https://aps-workspaces.us-east-1.amazonaws.com/workspaces/ws-9834281f-713a-4f3b-a57b-a02f5b6bbcd4/api/v1/remote_write
-#          sigv4:
-#            region: us-east-1
-#          queue_config:
-#            max_samples_per_send: 1000
-#            max_shards: 200
-#            capacity: 2500     
+serviceAccounts:
+  server:
+    name: prometheus-service-account
+    annotations: 
+      #
+      # Set this to the ARN of an IAM role for the service account.
+      # For details, refer to the documentation here: https://docs.aws.amazon.com/prometheus/latest/userguide/set-up-irsa.html
+      #
+      eks.amazonaws.com/role-arn: arn:aws:iam::016194978976:role/amp-iamproxy-ingest-role
+
+nodeExporter:
+    enabled: false
+alertmanager:   
+    enabled: false
+pushgateway:
+    enabled: false
+kubeStateMetrics:
+    enabled: false    
+
+server:
+    statefulSet:
+        enabled: false
+    persistentVolume:   
+        enabled: false
+        
+    remoteWrite:
+          #
+          # Set the ID of an AMP workspace 
+          #
+        - url: https://aps-workspaces.us-east-1.amazonaws.com/workspaces/ws-9834281f-713a-4f3b-a57b-a02f5b6bbcd4/api/v1/remote_write
+          sigv4:
+            region: us-east-1
+          queue_config:
+            max_samples_per_send: 1000
+            max_shards: 200
+            capacity: 2500     
