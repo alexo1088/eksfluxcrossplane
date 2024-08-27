@@ -1,5 +1,5 @@
 #!/bin/bash -e
-CLUSTER_NAME=crossplane-prod-cluster-w5gqc
+CLUSTER_NAME=crossplane-prod-cluster-n5tnc
 SERVICE_ACCOUNT_NAMESPACE=flux-system
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query "Account" --output text)
 OIDC_PROVIDER=$(aws eks describe-cluster --name $CLUSTER_NAME --query "cluster.identity.oidc.issuer" --output text | sed -e "s/^https:\/\///")
