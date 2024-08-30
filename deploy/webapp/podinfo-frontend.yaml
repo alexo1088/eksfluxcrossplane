@@ -99,7 +99,7 @@ metadata:
   name: frontend
   namespace: webapp
 spec:
-  type: ClusterIP
+  type: LoadBalancer  # Change from ClusterIP to LoadBalancer
   selector:
     app: frontend
   ports:
