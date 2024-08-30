@@ -58,11 +58,12 @@ metadata:
   namespace: golang
 spec:
   sessionAffinity: None
-  type: ClusterIP  
+  type: LoadBalancer  
   ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 3000
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: http
   selector:
     app: webapp
     role: scrape-target  
