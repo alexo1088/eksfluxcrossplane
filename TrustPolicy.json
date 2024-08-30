@@ -9,7 +9,7 @@
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
         "StringEquals": {
-          "oidc.eks.us-east-1.amazonaws.com/id/EE95E7FA03265CBA14162DE9FA2153BA:sub": "system:serviceaccount:flux-system:amp-iamproxy-ingest-service-account"
+          "oidc.eks.us-east-1.amazonaws.com/id/EE95E7FA03265CBA14162DE9FA2153BA:sub": "system:serviceaccount:flux-system:prometheus-service-account"
         }
       }
     }
