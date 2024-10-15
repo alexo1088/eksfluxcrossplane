@@ -23,7 +23,7 @@ metadata:
   name: webapp
   namespace: golang
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: webapp
